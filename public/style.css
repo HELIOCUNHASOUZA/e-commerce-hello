@@ -1,0 +1,416 @@
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+.la1 img {
+  width: 100px; /* Ajuste o valor conforme necessário */
+  height: auto; /* Manter a proporção original da imagem */
+}
+
+.la1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 20px;
+}
+
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Ajuste a altura conforme necessário */
+  overflow: hidden;
+}
+
+.banner-slides {
+  display: flex;
+  width: 400%; /* Ajuste o valor multiplicador conforme o número de slides */
+  animation: banner-animation 12s infinite; /* Ajuste a duração da animação */
+}
+
+.banner-slide {
+  flex: 1 0 100%;
+}
+
+.banner-slides {
+  display: flex;
+}
+
+.banner-slide {
+  flex: 1;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes banner-animation {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.la1 {
+  width: 800px; /* Defina a largura desejada */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  margin-top: 20px;
+}
+
+.la1 {
+  /* Estilos para a primeira div */
+  margin-right: 50px; /* Adiciona margem à direita da primeira div */
+}
+
+.la2 {
+  /* Estilos para a segunda div */
+  margin-right: 20px; 
+  margin-top: 42px;
+}
+
+#cadastroForm button {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4287f5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: brown;
+  padding: 0; /* Remover o padding para eliminar a parte branca */
+  border-radius: 10px;
+}
+.search-input {
+  width: 200px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  margin-left: auto;
+}
+
+
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #000;
+  background-color: #ddd;
+}
+
+/* Estilos para os produtos */
+.products {
+  margin: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+}
+
+
+.product {
+  display: inline-block;
+  width: 200px;
+  margin-right: 50px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  margin-top: 10px;
+}
+
+.product p {
+  margin-top: 5px;
+}
+
+/* blog */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  
+  padding: 0; /* Remover o padding para eliminar a parte branca */
+  text-align: center;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin-right: 100px; /* Aumentando a distância entre os ícones */
+}
+
+nav ul li a {
+  color: black;
+  background-color: transparent; /* Cor de fundo atual */
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  background-color: transparent; /* Cor de fundo atual */
+}
+
+.content {
+  margin: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+footer {
+  background-color: #d4d112;
+  padding: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4287f5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: brown;
+  padding: 0; /* Remover o padding para eliminar a parte branca */
+}
+
+nav {
+  background-color: yellow;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #000;
+  background-color: #ddd;
+}
+
+/* Estilos para os produtos */
+.products {
+  margin: 20px;
+}
+
+.product {
+  display: inline-block;
+  width: 200px;
+  margin-right: 50px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  margin-top: 10px;
+}
+
+.product p {
+  margin-top: 5px;
+}
+
+/* blog */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 0; /* Remover o padding para eliminar a parte branca */
+  text-align: center;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: black;
+  padding: 5px;
+}
+
+
+
+.content {
+  margin: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+footer {
+  background-color: yellow;
+  padding: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .la1, .la2 {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}

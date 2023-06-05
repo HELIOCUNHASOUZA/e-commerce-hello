@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul>
+              <li><a href="http://localhost:3000/inicio">Home</a></li>
+              <li><a href="http://localhost:3000/cadastro">Cadastro</a></li>
+              <li><a href="http://localhost:3000/blog">Blog</a></li>
+              <li><a href="https://web.whatsapp.com/">Contato</a></li>
+          </ul>
+          <div class="search-bar">
+              <div class="search-input-wrapper">
+                  <input type="text" class="search-input" placeholder="Pesquisar">
+                  <i class="fas fa-search search-icon"></i>
+              </div>
+          </div>
+      </nav>
+  </header>
+  
+<head>
+  <title>Cadastro de Cliente</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="la1" style="display: inline-block; vertical-align: top;">
+      <h1>Cadastro de Cliente</h1>
+    <hr>
+      <form id="cadastroForm">
+        <img src="public/img.jpg.jpg" alt="Mesa">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+  
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" required>
+  
+        <button type="submit">Cadastrar</button>
+        <button type="button" id="btnAlterar">Alterar</button>
+      </form>
+    </div>
+  
+    <div class="la2" style="display: inline-block; vertical-align: top;">
+      
+      <h1>Seu carrinho</h1>
+      <hr>
+      <form id="pedidosForm">
+        <div class="filter-buttons">
+          <button class="botao-secundario2">Status do Pedido</button>
+        </div>
+        <br>
+    
+        <div class="product">
+            <img src="public/mesa.jpeg" alt="Mesa">
+            <h3>Mesa</h3>
+            <p>Mesa De Canto Laca Offwhite Polida 40cm Com Altura De 60cm
+              Favorito
+              185 reales
+              R$
+              185
+              em 6x 30 reales con 83 centavos
+              R$
+              30
+              ,
+              83
+               sem juros.</p>
+            <p>Status: Pendente</p>
+        </div>
+    
+        <!-- Outros produtos aqui -->
+        <div class="produtos-container">
+          <br>
+          <li><a href="http://localhost:3000/inicio">Voltar para o Início do site</a></li>
+          <br>
+          <p>Não se decidiu? <a href="/categorias/1">Continue comprando</a></p>
+  
+          <div class="produtos"></div>
+  
+          <div class="outras-infos">
+
+            <section>
+              <br>
+              <hr>
+              <h4>Política de devolução</h4>
+              <p>Cancelamento da compra em até 4h depois da efetivação.</p>
+              <p>
+                Para devoluções depois de entregue, entre em contato com o nosso
+                setor de vendas
+              </p>
+            </section>
+          </div>
+    
+    </form>
+    
+    
+    
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<footer>
+  <head>
+    <title>Ícones de Redes Sociais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      .social-icons {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons a {
+        margin-right: 20%;
+        color: #333;
+        text-decoration: none;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </body>
+</html>
+<hr>
+  <p>&copy; 2023 Meu Blog. Todos os direitos reservados.</p>
+</footer>
+
+
+<script>
+    document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o envio do formulário
+      
+        // Obter os valores dos campos
+        var nome = document.getElementById('nome').value;
+        var email = document.getElementById('email').value;
+        var telefone = document.getElementById('telefone').value;
+      
+        // Criar objeto de cliente
+        var cliente = {
+          nome: nome,
+          email: email,
+          telefone: telefone
+        };
+      
+        // Salvar cliente no banco de dados
+        salvarCliente(cliente);
+        alert('Cliente cadastrado com sucesso!');
+        this.reset(); // Limpar o formulário
+      });
+      
+      function salvarCliente(cliente) {
+        // Conectar-se ao banco de dados (SQLite) usando o DB Browser
+        // e executar uma query de inserção para adicionar o cliente na tabela de clientes
+      }
+      
+</script>
